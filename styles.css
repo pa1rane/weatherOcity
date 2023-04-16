@@ -30,7 +30,7 @@ body {
     border: none;
     background-color: rgb(91, 193, 244);
     border-radius: 30px;
-    outline: none;
+    /* outline: none; */
 }
 
 ::placeholder {
