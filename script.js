@@ -13,10 +13,11 @@ searchbtn.addEventListener('click', ()=>{
   fetch(apiUrl + city + `&appid=${apiKey}`)
     .then(response => response.json())
     .then(data => {
+    console.log(data)
     const kTemp = data.main.temp;
     const fTemp = kTemp - 273.15;
     temp.innerHTML=fTemp.toFixed(0)+`°C`;
-    document.getElementById('city').innerHTML = city;
+    document.getElementById('city').innerHTML = city
     })
     .catch(error => {
       console.log("Error: ", error)
